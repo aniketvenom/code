@@ -13,11 +13,16 @@ public class DisplayGrades {
 
 	public static void main(String args[]) {
 
+		// declaring name array to store names of the students of size 10
 		String name[] = new String[10];
+
+		// declaring the marks array o =f size 10 to store the marks of the students
 		int marks[] = new int[10];
 
+		// creating the object of scanner class
 		Scanner sc = new Scanner(System.in);
 
+		// taking input from the user using for loop
 		for (int i = 0; i < 10; i++) {
 
 			System.out.println("Enter " + (i + 1) + " Student name :");
@@ -30,6 +35,7 @@ public class DisplayGrades {
 
 		}
 
+		// displaying grades using for loop and switch case
 		for (int i = 0; i < 10; i++) {
 			int mark = marks[i];
 
@@ -57,7 +63,8 @@ public class DisplayGrades {
 			}
 
 		}
-		
+
+		//closing the scanner
 		sc.close();
 	}
 }
